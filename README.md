@@ -1,133 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Zepto Inventory Analysis</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background-color: #fafafa;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #6a1b9a;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .tech span {
-            background: #e1bee7;
-            padding: 6px 10px;
-            border-radius: 6px;
-            margin-right: 6px;
-            display: inline-block;
-        }
-    </style>
-</head>
+<h1>🚀📦 ZEPTO INVENTORY ANALYSIS 📦🚀</h1>
 
-<body>
+<h2>📊 PROJECT OVERVIEW</h2>
+<p>
+This project focuses on analyzing <b>Zepto’s inventory and pricing data</b> to uncover insights related to
+product availability, stock health, discount effectiveness, and revenue contribution across categories.
+The analysis is performed using <b>SQL</b> and visualized through an <b>interactive Power BI dashboard</b>.
+</p>
 
-    <h1>Zepto Inventory Analysis 📦📊</h1>
+<h2>🎯 OBJECTIVES</h2>
+<ul>
+  <li>📦 Identify out-of-stock patterns and inventory gaps</li>
+  <li>💰 Analyze pricing strategies and discount effectiveness</li>
+  <li>📈 Discover revenue-driving categories and products</li>
+  <li>⚖️ Evaluate product value using price-per-gram analysis</li>
+  <li>🧠 Support data-driven inventory optimization decisions</li>
+</ul>
 
-    <div class="section">
-        <h2>Project Overview</h2>
-        <p>
-            This project analyzes Zepto’s product inventory and pricing data to uncover insights related to 
-            stock availability, discount strategies, pricing efficiency, and revenue contribution across 
-            categories. The analysis leverages SQL for deep querying and Power BI for interactive visualization 
-            to support inventory optimization and business decision-making.
-        </p>
-    </div>
+<h2>🗂️ DATASET SUMMARY</h2>
+<ul>
+  <li>🧮 Total Products (SKUs): 3,700+</li>
+  <li>🏷️ Categories: Grocery, Dairy, Beverages, Personal Care & more</li>
+  <li>📦 Key Fields: MRP, Discount %, Selling Price, Weight, Stock Status</li>
+</ul>
 
-    <div class="section">
-        <h2>Objectives</h2>
-        <ul>
-            <li>Analyze inventory availability and out-of-stock patterns across product categories</li>
-            <li>Evaluate pricing strategies and discount effectiveness</li>
-            <li>Identify revenue-driving categories and high-value products</li>
-            <li>Assess inventory health and stock optimization opportunities</li>
-            <li>Build an interactive dashboard for business insights</li>
-        </ul>
-    </div>
+<h2>🧹 DATA CLEANING & PREPARATION</h2>
+<ul>
+  <li>❌ Removed products with zero or invalid pricing</li>
+  <li>💱 Converted prices from paise to rupees</li>
+  <li>✅ Validated missing values and ensured data consistency</li>
+  <li>🔢 Standardized numeric fields for accurate calculations</li>
+</ul>
 
-    <div class="section">
-        <h2>Dataset Summary</h2>
-        <ul>
-            <li>Total Products (SKUs): 3,700+</li>
-            <li>Key Fields: Category, Product Name, MRP, Discount %, Selling Price, Weight, Stock Status</li>
-            <li>Inventory Metrics: Available Quantity, Out-of-Stock Flag, Product Weight</li>
-        </ul>
-    </div>
+<h2>🧠 SQL ANALYSIS HIGHLIGHTS</h2>
+<ul>
+  <li>🏆 Identified top-value products based on highest discount percentage</li>
+  <li>📉 Analyzed high-MRP out-of-stock products vs category averages</li>
+  <li>💵 Calculated estimated revenue contribution by category</li>
+  <li>⚖️ Performed price-per-gram analysis to rate product value</li>
+  <li>🧩 Used CTEs, window functions, ranking, percentiles, and CASE statements</li>
+</ul>
 
-    <div class="section">
-        <h2>Data Cleaning & Preparation</h2>
-        <ul>
-            <li>Removed products with zero MRP or invalid pricing</li>
-            <li>Converted prices from paise to rupees for consistency</li>
-            <li>Validated null values and ensured data completeness</li>
-            <li>Standardized numeric fields for accurate calculations</li>
-        </ul>
-    </div>
+<h2>📊 POWER BI DASHBOARD INSIGHTS</h2>
+<ul>
+  <li>📦 Total Units: 3,731</li>
+  <li>💰 Total Sales: 530K+</li>
+  <li>🚫 Out-of-Stock Rate: ~12%</li>
+  <li>📊 Category-wise sales, stock levels, and discount trends</li>
+  <li>⚖️ Weight-based average selling price analysis</li>
+</ul>
 
-    <div class="section">
-        <h2>SQL Analysis Highlights</h2>
-        <ul>
-            <li>Identified top-value products based on highest discount percentages</li>
-            <li>Analyzed high-MRP out-of-stock products against category averages</li>
-            <li>Calculated estimated revenue contribution by category</li>
-            <li>Performed price-per-gram analysis to classify product value</li>
-            <li>Used CTEs, window functions, ranking, percentiles, and CASE statements</li>
-            <li>Assessed inventory health using stock availability thresholds</li>
-        </ul>
-    </div>
+<h2>🔥 KEY BUSINESS INSIGHTS</h2>
+<ul>
+  <li>🥇 Cooking Essentials and Munchies drive the highest sales</li>
+  <li>📦 Bulk-weight products show higher average selling prices</li>
+  <li>🚨 High-MRP items face frequent stockouts indicating restocking gaps</li>
+  <li>💸 Discounts strongly influence category-level revenue performance</li>
+</ul>
 
-    <div class="section">
-        <h2>Dashboard Insights (Power BI)</h2>
-        <ul>
-            <li>Total Units: 3,731 | Total Sales: 530K+</li>
-            <li>Out-of-Stock Rate: ~12%</li>
-            <li>Category-wise sales, stock levels, and discount trends</li>
-            <li>Weight-based pricing and average selling price analysis</li>
-            <li>Interactive filters for category and weight segmentation</li>
-        </ul>
-    </div>
+<h2>🛠️ TOOLS & TECHNOLOGIES</h2>
+<ul>
+  <li>🐘 PostgreSQL</li>
+  <li>🧠 SQL (CTEs, Window Functions)</li>
+  <li>📊 Power BI</li>
+  <li>📋 Excel</li>
+</ul>
 
-    <div class="section">
-        <h2>Key Business Insights</h2>
-        <ul>
-            <li>Cooking Essentials and Munchies emerged as top revenue-driving categories</li>
-            <li>Bulk-weight products showed higher average selling prices</li>
-            <li>Several high-MRP products were frequently out of stock, indicating restocking gaps</li>
-            <li>Discount-heavy products significantly influenced category-level sales performance</li>
-        </ul>
-    </div>
+<h2>✅ CONCLUSION</h2>
+<p>
+This project demonstrates how <b>SQL-driven analysis</b> and <b>interactive dashboards</b> can be used to
+evaluate inventory efficiency, optimize pricing strategies, and improve stock management for
+quick-commerce platforms like Zepto.
+</p>
 
-    <div class="section">
-        <h2>Tools & Technologies</h2>
-        <div class="tech">
-            <span>PostgreSQL</span>
-            <span>SQL</span>
-            <span>Power BI</span>
-            <span>Excel</span>
-            <span>Data Analysis</span>
-            <span>Business Intelligence</span>
-        </div>
-    </div>
+<h3>⭐ If you liked this project, don’t forget to star the repository!</h3>
 
-    <div class="section">
-        <h2>Conclusion</h2>
-        <p>
-            This project demonstrates the use of SQL-driven analytics and dashboarding to evaluate 
-            inventory efficiency, pricing strategies, and revenue performance. The insights can help 
-            improve stock planning, optimize discount strategies, and enhance overall operational efficiency 
-            for quick-commerce platforms like Zepto.
-        </p>
-    </div>
-
-</body>
-</html>
